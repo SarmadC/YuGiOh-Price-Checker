@@ -1,9 +1,9 @@
 import requests
 import pandas as pd
 import time
-import openpyxl
+import openpyxl 
 
-df = pd.read_excel("Christian Gerlach.xlsx", usecols=['print_tag'])  # just dummy data, in your case this is
+df = pd.read_excel("Your Excel file with print tags.xlsx", usecols=['print_tag'])  
 
 
 # pd.read_excel
@@ -18,4 +18,4 @@ def get_tag(print_tag):
 df['result'] = df['print_tag'].apply(get_tag)
 
 df2 = pd.json_normalize(df['result'])
-df2.to_excel('Christian YGO Analysis.xlsx')
+df2.to_excel('Output name of file.xlsx')
