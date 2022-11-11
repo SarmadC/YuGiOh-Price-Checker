@@ -1,11 +1,12 @@
+# Create a dataset of your YGO collection using print tags
+# https://github.com/SarmadC/YuGiOh-Price-Checker
+
 import requests
 import pandas as pd
 import time
 import openpyxl 
 
 df = pd.read_excel("Your Excel file with print tags.xlsx", usecols=['print_tag'])  
-
-# pd.read_excel
 
 def get_tag(print_tag):
     request = requests.get(
