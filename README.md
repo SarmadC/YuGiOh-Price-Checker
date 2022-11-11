@@ -1,18 +1,49 @@
-### YuGiOh-Price-Checker
-#### Populate Excel Files with the price data of your YuGiOh Cards using print tags
+![YGO Price Check Banner](https://github.com/SarmadC/YuGiOh-Price-Checker/blob/main/YUGIOH%20PRICE%20CHECK.png)
 
 #### What the program does?
-This program will allow you to check the price of your YuGiOh cards by using print tags.
-
-The goal is to be able to create stunning visualization of your card collection that is unique to you
-and updates in real time. I was somewhat successful in doing this by importing the dataset created by the API into
-PowerBI and creating a dashboard. Another feature I want to implement is the ability to preview a card within the excel sheet by hovering over it. 
-
+This program gathers Yugioh card pricing data and populates an excel file using unique tags. The data in the excel file can then be analyzed to create visualizations and a dashboard containing price trend information. 
 
 #### How was the program created?
 The program was created in Python using the YGO prices API.
 
 #### Why YGO Prices API?
-The reason YGO prices API was used is that it is free and does not require an access to a private key compared to the TCG Player API
-One of the many challenges for me was learning how to use APIs for the first time and implementing it with Python
+The reason YGO prices API was used is that it is free and does not require access to a private key compared to the TCG Player API.
+
+### Future Features
+
+I would like this program to provide quick visual access to the price trends of Yugioh cards, pricing anomalies, and much more. Another feature I want to
+implement is the ability to preview images of the card in the excel file by hovering over the image URL. This could be possible with using VBA
+
+**Requirements**
+---
+
+1. Python
+
+    + [Download here](https://www.python.org/downloads/)
+        - Version 3.0+
+
+2. Microsoft Excel
+
+    + [Create a New Blank Sheet](https://imgur.com/a/1fmRczi)
+        - Blank sheet must have a 'print_tag' column
+        - Make sure to save the .xlsx file in the same file path where the .py file was downloaded
+
+**How to Use**
+---
+1. Import Required Libraries
+
+    ```
+    import openpyxl
+    import requests
+    import pandas as pd
+    import time
+    ```
+    + pip install these libraries from Terminal if not already downloaded
+
+2. Import your blank .xlsx file into the program
+   + ```df = pd.read_excel('Your excel file.xlsx', usecols = ['print_tag'])```
+
+3. Give your file an output name
+  +```df.to_excel('Name Your Excel File Output.xlsx')```
+
 
