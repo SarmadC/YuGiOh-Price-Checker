@@ -42,11 +42,11 @@ implement is the ability to preview images of the card in the excel file by hove
     ```
     + pip install these libraries from Terminal if not already downloaded
 
-2. Import your blank .xlsx file into the program
+2. Import your print tag .xlsx file into the program
    + ```df = pd.read_excel('Your excel file.xlsx', usecols = ['print_tag'])```
 
 3. Give your file an output name
-   ```df.to_excel('Name Your Excel File Output.xlsx')```
+   ```df2.to_excel('Name Your Excel File Output.xlsx')```
 
 4. Open your file and your dataset should be there
 
