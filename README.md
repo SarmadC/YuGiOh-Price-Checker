@@ -33,8 +33,7 @@ implement is the ability to preview images of the card in the excel file by hove
 
 **How to Use**
 ---
-1. Import Required Libraries
-
+1. Install the 'YGO Price.py' file and import the required libraries
     ```
     import openpyxl
     import requests
