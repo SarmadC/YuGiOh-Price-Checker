@@ -26,8 +26,10 @@ implement is the ability to preview images of the card in the excel file by hove
 
 2. Microsoft Excel
 
-    + [Create a New Blank Sheet](https://imgur.com/a/1fmRczi)
-        - Blank sheet must have a 'print_tag' column and insert your print_tags under this column
+    + Create a New Blank Sheet
+        - Blank sheet must have a ['print_tag'](https://user-images.githubusercontent.com/20826612/201443560-7c0cbda7-282e-462c-85ed-13c6b3adc0c2.png)  column and insert your print_tags under this column like so 
+        - ![Print tag examples](https://user-images.githubusercontent.com/20826612/201444295-1cc4cdc8-c7f0-4ce3-ba23-725bd1fd1bf8.png)
+
         - Make sure to save the .xlsx file in the same file path where the .py file was downloaded
         
 
