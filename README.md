@@ -65,5 +65,5 @@ implement is the ability to preview images of the card in the excel file by hove
 
 **Donation**
 
-This is free, open-source software. If you'd like to support the development of future projects, or say thanks for this one, you can 
+This is free. If you'd like to support the development of future projects, or say thanks for this one, you can 
 [buy me a coffee](https://ko-fi.com/sarmadc).
